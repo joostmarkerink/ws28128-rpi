@@ -92,7 +92,7 @@ private:
     static unsigned int reverseWord(unsigned int word);
 
     void terminate(int dummy);
-    void fatal(char *fmt, ...);
+    void fatal(const char *fmt, ...);
 
     unsigned int mem_virt_to_phys(void *virt);
     unsigned int mem_phys_to_virt(uint32_t phys);

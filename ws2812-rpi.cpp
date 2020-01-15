@@ -203,7 +203,7 @@ void NeoPixel::terminate(int dummy){
     }
 }
 
-void NeoPixel::fatal(char *fmt, ...){
+void NeoPixel::fatal(const char *fmt, ...){
     va_list ap;
     va_start(ap, fmt);
     vfprintf(stderr, fmt, ap);
